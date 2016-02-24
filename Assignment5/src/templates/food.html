@@ -1,0 +1,16 @@
+<div class="row" ng-controller="YelpCtrl" ng-init="initialize()">
+    <div class="col-md-6 col-md-offset-3">
+        <table class="table table-boredered table-hover">
+            <thead>
+            <th>
+                <h2><span id="username"></span>, Indian Restaurants near you</h2>
+            </th>
+            </thead>
+            <tr ng-repeat="restaurant in foodLocations">
+                <td>{{restaurant[0]}}</td>
+                <td></td>
+            </tr>
+        </table>
+        <div id="map-canvas" style="height: 400px;"></div>
+    </div>
+</div>
